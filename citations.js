@@ -1,8 +1,8 @@
 // message de bienvenue
-alert("BIENVENUE DANS LE GENERATEUR DE CITATIONS\nSTAR WARS / KAAMELOTT");
+console.log("BIENVENUE DANS LE GENERATEUR DE CITATIONS\nSTAR WARS / KAAMELOTT");
 
 // Presentation du générateur
-alert("Vous allez avoir la possibilité de choisir entre deux types de citations générées aléatoirements:\n soit des citations de Yoda du film STAR WARS,\n soit des citations du Roi Loth d'Orcanie, de la Série KAAMELOTT!");
+console.log("Vous allez avoir la possibilité de choisir entre deux types de citations générées aléatoirements:\n soit des citations de Yoda du film STAR WARS,\n soit des citations du Roi Loth d'Orcanie, de la Série KAAMELOTT!");
 ProgCitations();
 
 function ProgCitations() {
@@ -86,7 +86,7 @@ function ProgCitations() {
                 var extrait3 = citPart3[Math.floor(citPart3.length * Math.random())];
                 var extrait4 = citPart4[Math.floor(citPart4.length * Math.random())];
                 var citations = extrait1 + extrait2 + extrait3 + extrait4 + "\n";
-                alert(citations);
+                console.log(citations);
             }
         }
         // si nb choix n'est pas compris entre 1 et 5 on revient au debut de la fonction
@@ -147,7 +147,7 @@ function ProgCitations() {
                 var extrait3 = citKaam3[Math.floor(citKaam3.length * Math.random())];
 
                 var citations = extrait1 + extrait2 + extrait3 + "\n";
-                alert(citations);
+                console.log(citations);
             }
         }
         // si nb choix n'est pas compris entre 1 et 5 on revient au debut de la fonction
@@ -161,7 +161,7 @@ function ProgCitations() {
     if (reboot === "OUI") {
         ProgCitations();
     } else if (reboot === "NON") {
-        alert("Et là, normalement, il me faut une citation latine, mais pfff... j’en ai marre ! CIAO");
+        console.log("Et là, normalement, il me faut une citation latine, mais pfff... j’en ai marre ! CIAO");
     }
 
 }
